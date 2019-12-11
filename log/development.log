@@ -3907,3 +3907,23 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 64ms (Views: 42.9ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/posts/new" for 38.126.33.187 at 2019-12-11 02:56:14 +0000
+Cannot render console from 38.126.33.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (4.3ms)
+  Rendered posts/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 38.126.33.187 at 2019-12-11 02:56:17 +0000
+Cannot render console from 38.126.33.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CRLqJumUPzv5X29+E37MArJKDDAFDXYTcByb0C6sxwHESfi+qeEMb34kzodJu32EXkjFDSfu8O3cILxBjoDKdw==", "post"=>{"author_id"=>"", "title"=>"adfad", "description"=>"adfasdfas"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Adfad"], ["description", "adfasdfas"], ["created_at", "2019-12-11 02:56:17.333573"], ["updated_at", "2019-12-11 02:56:17.333573"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://178.128.14.28:42007/posts/18
+Completed 302 Found in 11ms (ActiveRecord: 6.7ms)
+
+
